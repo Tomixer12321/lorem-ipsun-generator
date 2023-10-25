@@ -7,9 +7,15 @@ const App=()=>{
 
   const submitForm=(e)=>{
     e.preventDefault()
-    const amount=parseInt(count)
+    let amount=parseInt(count)
 
     setParagraph(data.slice(0,amount))
+
+    if(amount<0){
+      amount=1
+    }else if(amount>5){
+      amount=5
+    }
   }
 
   return <section>
