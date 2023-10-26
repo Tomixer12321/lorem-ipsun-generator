@@ -19,7 +19,7 @@ const App = () => {
   };
 
   return (
-    <section>
+    <section className="form-section">
       <h1>Lorem ipsum generator</h1>
       <form onSubmit={submitForm}>
         <label htmlFor="paragraph">odstavec:</label>
